@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Portfolio Builder</title>
+  <link rel="stylesheet" href="style.css" />
+   <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+    </style>
+</head>
+<body>
+  <div class="app">
+    <header class="app-header">
+      <h1>Portfolio Builder</h1>
+      <p>Create a simple portfolio page from this form.</p>
+    </header>
+
+    <main class="app-main">
+      <section class="builder-panel">
+        <h2>Fill Your Details</h2>
+        <form id="builder-form">
+          <label>
+            Name
+            <input type="text" id="name" placeholder="Your Name" />
+          </label>
+
+          <label>
+            Title / Tagline
+            <input type="text" id="title" placeholder="e.g. Computer Science Student" />
+          </label>
+
+          <label>
+            About You
+            <textarea id="about" rows="4" placeholder="Short bio..."></textarea>
+          </label>
+
+          <label>
+            Skills (comma separated)
+            <input type="text" id="skills" placeholder="C++, Java, HTML, CSS" />
+          </label>
+
+          <label>
+            Projects (one per line, format: Title - Short description)
+            <textarea id="projects" rows="4" placeholder="Portfolio Builder - A tool to generate portfolios&#10;"></textarea>
+          </label>
+
+          <label>
+            GitHub URL
+            <input type="text" id="github" placeholder="https://github.com/yourname" />
+          </label>
+
+          <label>
+            LinkedIn URL
+            <input type="text" id="linkedin" placeholder="https://linkedin.com/in/yourname" />
+          </label>
+
+          <button type="button" id="download-btn">Download Portfolio HTML</button>
+        </form>
+      </section>
+
+      <section class="preview-panel">
+        <h2>Live Preview</h2>
+        <div id="preview"></div>
+      </section>
+    </main>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
